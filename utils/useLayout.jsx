@@ -5,7 +5,8 @@ export default function useLayout() {
   const router = useRouter()
 
   let Layout = HomeLayout
-  if (router.route === "") {
+
+  if (router.route === "/") {
     console.log("test")
     Layout = HomeLayout
   } else {

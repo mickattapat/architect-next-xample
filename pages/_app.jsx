@@ -3,11 +3,11 @@ import "../styles/globals.css"
 import useLayout from "../utils/useLayout"
 
 function MyApp({ Component, pageProps }) {
-  
+  const Layout = useLayout()
   return (
-      <useLayout>
+      <Layout>
         <Component {...pageProps} />
-      </useLayout>
+      </Layout>
   )
 }
 
